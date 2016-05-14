@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="send_array">
+        <item>Widgets</item>
+        <item>Shortcuts</item>
+    </string-array>
+</resources>

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@mipmap/fondopantalla"
+    android:id="@+id/home"
+    >
+
+    <SlidingDrawer
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:handle="@+id/handle"
+        android:content="@+id/content">
+
+        <ImageView
+            android:id="@+id/handle"
+            android:background="@drawable/abc_ic_menu_selectall_mtrl_alpha"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+        <GridView
+            android:id="@+id/content"
+            android:background="@color/black_transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="90dp"
+            android:numColumns="auto_fit"
+            android:verticalSpacing="50dp"
+            android:horizontalSpacing="50dp"
+            android:stretchMode="columnWidth"
+            android:gravity="center"
+            >
+
+        </GridView>
+    </SlidingDrawer>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cambiar fondo"
+        android:id="@+id/botonCambiarFondo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="41dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginTop="39dp" />
+</RelativeLayout>
